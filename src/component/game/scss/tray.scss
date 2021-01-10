@@ -1,0 +1,28 @@
+@import "../../../assets/scss/variables";
+
+.tray {
+  width: 40vh;
+  height: 40vh;
+  margin: 5vh auto;
+  background-color: $background-secondary;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  .tray {
+    width: 85vh;
+    height: 75vh;
+    margin: 5vh auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tray {
+    width: 85vh;
+    height: 75vh;
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../../assets/scss/variables";
+
+.label {
+  margin-top: 50px;
+}
+
+.input {
+  border: 1px solid $gray;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+  &-text {
+    width: 300px;
+    margin: 15px auto 0;
+    text-align: center;
+  }
+
+  &.sign-up-text,
+  &-mail,
+  &-password {
+    width: 500px;
+    margin: 10px auto 0;
+    padding: 5px 10px;
+    text-align: left;
+  }
+
+  &.code {
+    width: 150px;
+    display: flex;
+    margin: 0;
+  }
+
+  &.sign-up-password {
+    width: 250px;
+  }
+}

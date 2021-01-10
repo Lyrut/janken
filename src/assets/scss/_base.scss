@@ -1,0 +1,31 @@
+@import "./reset";
+@import "./variables";
+@import "./font";
+
+* {
+  font-family: "FuturaBook", "Montserrat";
+  font-size: 21px;
+  letter-spacing: 0.1em;
+}
+
+body {
+  background-color: $background-primary;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+
+    &-thumb {
+      background: $font-primary-invert;
+      border-radius: 110px;
+      -webkit-border-radius: 110px;
+      -moz-border-radius: 110px;
+      -ms-border-radius: 110px;
+      -o-border-radius: 110px;
+      border-left: solid 1px $font-primary;
+    }
+
+    &-track {
+      background: $gray;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import "../../../assets/scss/variables";
+
+.navbar {
+  width: 40vh;
+  height: 10vh;
+  margin: 5vh auto 0;
+  background-color: $background-secondary;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+
+  .left {
+    .name {
+    }
+  }
+
+  .right {
+    .name {
+    }
+  }
+
+  .hearts {
+    .heart {
+      color: $red;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    width: 85vh;
+    height: 10vh;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: row;
+
+    .left,
+    .right {
+      width: 50%;
+      padding: 0 50px;
+      display: flex;
+      align-items: center;
+
+      .name {
+        width: 200px;
+      }
+
+      .hearts {
+        width: 100px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+
+    .left {
+      flex-direction: row;
+      text-align: left;
+
+      .hearts {
+        flex-direction: row;
+      }
+    }
+
+    .right {
+      flex-direction: row-reverse;
+      text-align: right;
+
+      .hearts {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+  }
+}

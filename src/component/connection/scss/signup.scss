@@ -1,0 +1,56 @@
+@import "../../../assets/scss/variables";
+
+.sign-up {
+  width: 40vh;
+  height: 40vh;
+  margin: 5vh auto;
+  background-color: $background-secondary;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+
+  .success {
+    text-align: center;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sign-up {
+    width: 80%;
+    height: 90vh;
+    margin: 5vh auto;
+
+    .pseudo,
+    .mail,
+    .pwd,
+    .pwd-verify {
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pwd-group {
+      width: 650px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .submit {
+      width: 375px;
+      margin: 50px auto 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .sign-up {
+    width: 70%;
+  }
+}
